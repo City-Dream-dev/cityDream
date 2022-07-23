@@ -14,18 +14,18 @@
 #### Install dependencies
 > All commands need to run in the ``frontend`` directory
 
-```json
+```bash
 npm install
 ```
 
 #### Run dev server
 
-```json
+```bash
 npm run dev
 ```
 
 #### Build the frontend project
 
-```json
+```bash
 npm run build
 ```
