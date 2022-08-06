@@ -1,0 +1,14 @@
+.form-link {
+  padding: 0 20px;
+  color: #fff !important;
+  font-family: 'Open Sans',Arial,sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 56px;
+  background-color: #f1592a;
+  text-decoration: none;
+  border-radius: 10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+}
