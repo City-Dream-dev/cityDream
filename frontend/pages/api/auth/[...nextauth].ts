@@ -10,6 +10,25 @@ export default NextAuth({
       clientSecret: process.env.FACEBOOK_SECRET as string
     })
   ],
+  callbacks: {
+    async session({ session, token, user }) {
+      session.id = token.id;
+      session.token = token.accessToken;
+
+      return session;
+    },
+
+    async jwt({ token, user, account }) {
+      if (user) {
+        token.id = user.id;
+      }
+      if (account) {
+        token.accessToken = account.access_token;
+      }
+
+      return token;
+    },
+  },
   pages: {
     signIn: '/auth/sign-in',
   }

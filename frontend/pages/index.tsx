@@ -5,8 +5,12 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 const Home: NextPage = () => {
-  const { data: session } = useSession()
+  const { data: session } = useSession();
 
+  const showToken = () => {
+    // Return user id and token
+    console.log(session);
+  };
   return (
     <div>
       <Head>
@@ -21,6 +25,7 @@ const Home: NextPage = () => {
           {session ?
             <>
               <p>Signed in as {session?.user?.name}</p>
+              <button onClick={showToken}>Show token in console</button>
               <button onClick={() => signOut()}>Sign out</button>
             </>
             :

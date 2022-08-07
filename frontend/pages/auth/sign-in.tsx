@@ -33,7 +33,7 @@ const SignIn: NextPage<{ providers: Provider[] }> = ({ providers }) => {
         <div style={{ maxWidth: 500, padding: 40, marginLeft: 'auto', marginRight: 'auto' }}>
           {Object.values(providers).map((provider) => (
             <div key={provider.name}>
-              <button onClick={() => signIn(provider.id)}>
+              <button onClick={() => signIn(provider.id, { callbackUrl: '/' })}>
                 Sign in with {provider.name}
               </button>
             </div>
