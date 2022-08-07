@@ -1,5 +1,5 @@
 .form-link {
-  padding: 0 20px;
+  padding: 0 60px;
   color: #fff !important;
   font-family: 'Open Sans',Arial,sans-serif;
   display: inline-block;
@@ -11,4 +11,10 @@
   border-radius: 10px;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
+}
+
+@media (max-width: 640px) {
+  .form-link {
+    padding: 0 30px;
+  }
 }
