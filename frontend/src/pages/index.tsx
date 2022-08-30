@@ -3,6 +3,8 @@ import { useSession, signOut } from 'next-auth/react';
 
 import Head from 'next/head';
 import Link from 'next/link';
+import { Typography } from '@mui/material';
+import { light } from '@mui/material/styles/createPalette';
 
 const Home: NextPage = () => {
   const { data: session } = useSession();
@@ -20,7 +22,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main style={{ textAlign: 'center', marginTop: 40 }}>
-        <h1>City dream</h1>
+        <Typography variant={'h1'}>City dream</Typography>
         <div style={{ marginTop: 40 }}>
           {session ?
             <>

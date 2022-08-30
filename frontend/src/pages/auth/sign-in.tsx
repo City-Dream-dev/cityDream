@@ -39,7 +39,7 @@ const SignIn: NextPage<{ providers: Provider[] }> = ({ providers }) => {
             </div>
           ))}
         </div>
-        <Link href="/frontend/src/pages">
+        <Link href="/">
           <a>
             Back to home
           </a>
