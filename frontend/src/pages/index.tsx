@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <Head>
         <title>City dream</title>
         <meta name="description" content="City dream"/>
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" href="/frontend/public/favicon.ico"/>
       </Head>
 
       <main style={{ textAlign: 'center', marginTop: 40 }}>
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             :
             <>
               <p>Not signed in</p>
-              <Link href="./auth/./sign-in">
+              <Link href="./auth/sign-in">
                 <a>
                   Sign in
                 </a>

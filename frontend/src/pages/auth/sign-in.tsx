@@ -24,7 +24,7 @@ const SignIn: NextPage<{ providers: Provider[] }> = ({ providers }) => {
       <Head>
         <title>Sing in | City dream</title>
         <meta name="description" content="Sing in | City dream"/>
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" href="/frontend/public/favicon.ico"/>
       </Head>
 
       <main style={{ textAlign: 'center', marginTop: 40 }}>
@@ -39,7 +39,7 @@ const SignIn: NextPage<{ providers: Provider[] }> = ({ providers }) => {
             </div>
           ))}
         </div>
-        <Link href="/">
+        <Link href="/frontend/src/pages">
           <a>
             Back to home
           </a>
