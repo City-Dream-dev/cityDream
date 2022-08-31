@@ -26,6 +26,9 @@ export const theme = createTheme({
       primary: BLACK,
       light: WHITE
     },
+    background: {
+      paper: ALABASTER
+    }
   },
   typography: {
     fontFamily: "Roboto",
@@ -67,12 +70,39 @@ export const theme = createTheme({
         sizeMedium: {
           padding: '4px 24px',
         },
+        sizeLarge: {
+          fontSize: '16px !important',
+          padding: '12px 30px'
+        },
         outlinedSizeMedium: {
           padding: '3px 24px',
         },
         containedPrimary: {
           color: WHITE
         },
+      }
+    },
+    MuiTypography: {
+      defaultProps: {
+        variant: 'body2'
+      },
+      styleOverrides: {
+        body1: {
+          fontSize: 16,
+          lineHeight: '22px'
+        },
+        body2: {
+          fontSize: 14,
+          lineHeight: '20px'
+        }
+      }
+    },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          color: WHITE,
+          backgroundColor: DEEP_SEA_GREEN
+        }
       }
     }
   }
