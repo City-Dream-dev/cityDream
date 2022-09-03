@@ -1,9 +1,9 @@
 import { Box } from '@mui/system';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../assets/images/icons/logo.svg';
+import logo from '@assets/icons/logo.svg';
 
-export const HeaderLogo = () => (
+export const Logo = () => (
   <>
     <Box
       position={'absolute'}

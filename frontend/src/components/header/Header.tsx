@@ -9,10 +9,10 @@ import {
   Toolbar,
   useMediaQuery
 } from '@mui/material';
-
-import { theme } from '../themes';
 import { Menu } from '@mui/icons-material';
-import { HeaderNavMenu, HeaderLogo, HeaderDrawerMenu } from '.';
+
+import { theme } from '@themes';
+import { NavMenu, Logo, DrawerMenu } from '.';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,13 +38,13 @@ export const Header = () => {
               >
                 <Menu/>
               </IconButton>
-            ) : <HeaderNavMenu/>}
-            <HeaderLogo/>
+            ) : <NavMenu/>}
+            <Logo/>
           </Toolbar>
         </Container>
       </AppBar>
       <Drawer open={isOpen} onClose={toggleDrawer}>
-        <HeaderDrawerMenu/>
+        <DrawerMenu/>
       </Drawer>
     </Box>
   );

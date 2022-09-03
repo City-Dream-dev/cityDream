@@ -2,7 +2,7 @@ import { Box } from '@mui/system';
 import Link from 'next/link';
 import { Button, Typography } from '@mui/material';
 
-export const HeaderNavMenu = () => (
+export const NavMenu = () => (
   <>
     <Box display={'flex'} alignItems={'center'} flexGrow={1}>
       <Box>

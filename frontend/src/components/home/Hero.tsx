@@ -1,29 +1,23 @@
+import { FC } from 'react';
 import Image from 'next/image';
 
 import { Box } from '@mui/system';
-import {
-  Button,
-  Container,
-  Grid,
-  Typography,
-  useMediaQuery
-} from '@mui/material';
+import { Button, Container, Grid, Typography } from '@mui/material';
 
-import { theme } from '../themes';
+import heroImage from '@assets/images/cd-hero-image.png';
 
-import heroImage from '../assets/images/cd-hero-image.png';
+type HomeHeroProps = {
+  moreMd: boolean;
+  lessLg: boolean;
+};
 
-export const Home = () => {
-  const lessLg = useMediaQuery(theme.breakpoints.down('lg'));
-  const moreMd= useMediaQuery(theme.breakpoints.up('md'));
-
+export const Hero: FC<HomeHeroProps> = ({ moreMd, lessLg }) => {
+  const descriptionMaxWidth = moreMd ? 440 : 'initial';
   const squareWidth = lessLg ? 24 : 32;
   const squareHeight = squareWidth * 1.5;
 
-  const descriptionMaxWidth = moreMd ? 440 : 'initial'
-
   return (
-    <Box bgcolor={'background.paper'}>
+    <Box bgcolor={'background.paper'} component={'section'}>
       <Container>
         <Box pt={'90px'} pb={'64px'}>
           <Grid container columnSpacing={4}>

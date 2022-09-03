@@ -37,6 +37,20 @@ export const theme = createTheme({
       fontSize: '36px',
       lineHeight: '46px',
       letterSpacing: '-1px'
+    },
+    h2: {
+      fontWeight: 700,
+      fontSize: '33px',
+      lineHeight: '48px',
+      letterSpacing: '0.1px'
+    },
+    body1: {
+      fontSize: 16,
+      lineHeight: '22px'
+    },
+    body2: {
+      fontSize: 14,
+      lineHeight: '20px'
     }
   },
   components: {
@@ -86,16 +100,6 @@ export const theme = createTheme({
       defaultProps: {
         variant: 'body2'
       },
-      styleOverrides: {
-        body1: {
-          fontSize: 16,
-          lineHeight: '22px'
-        },
-        body2: {
-          fontSize: 14,
-          lineHeight: '20px'
-        }
-      }
     },
     MuiDrawer: {
       styleOverrides: {

@@ -2,7 +2,7 @@ import { Box,  } from '@mui/system';
 import Link from 'next/link';
 import { Button, Typography, Stack } from '@mui/material';
 
-export const HeaderDrawerMenu = () => (
+export const DrawerMenu = () => (
   <Box p={4} textAlign={'center'} height={'100%'}>
     <Stack spacing={4} height={'100%'}>
       <Link href={'/#pro-nas'}>
