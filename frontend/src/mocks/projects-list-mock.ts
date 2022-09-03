@@ -1,4 +1,4 @@
-import { ProjectCardProps } from '../components';
+import { ProjectCardProps } from '@components';
 
 import projectImage from '@assets/images/project-image.png';
 

@@ -6,22 +6,22 @@ export const NavMenu = () => (
   <>
     <Box display={'flex'} alignItems={'center'} flexGrow={1}>
       <Box>
-        <Link href={'/#pro-nas'}>
+        <Link href={'/#pro-nas'} passHref>
           <Typography
             component={'a'}
             color={'text.light'}
-            sx={{ cursor: 'pointer' }}
+            sx={{ textDecoration: 'none' }}
           >
             Про нас
           </Typography>
         </Link>
       </Box>
       <Box marginX={3}>
-        <Link href={'/#pro-nas'}>
+        <Link href={'/#pro-nas'} passHref>
           <Typography
             component={'a'}
             color={'text.light'}
-            sx={{ cursor: 'pointer' }}
+            sx={{ textDecoration: 'none' }}
           >
             Проєкти
           </Typography>
