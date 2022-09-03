@@ -4,7 +4,7 @@ import {
 
 import { theme } from '@themes';
 
-import { Hero, DreamFlow } from '../index';
+import { Hero, DreamFlow, DreamsInProgress } from '@components';
 
 export const Home = () => {
   const lessLg = useMediaQuery(theme.breakpoints.down('lg'));
@@ -14,6 +14,7 @@ export const Home = () => {
     <>
       <Hero lessLg={lessLg} moreMd={moreMd}/>
       <DreamFlow />
+      <DreamsInProgress/>
     </>
   );
 };

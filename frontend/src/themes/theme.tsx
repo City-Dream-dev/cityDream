@@ -4,11 +4,13 @@ import { THEME_COLORS } from './theme-colors';
 const {
   ALABASTER,
   BLACK,
+  COD_GRAY,
   CONCRETE,
   DEEP_SEA_GREEN,
   DOVE_GRAY,
   GALLERY,
   PIZAZZ,
+  SILVER,
   JADE,
   WHITE
 } = THEME_COLORS;
@@ -24,7 +26,10 @@ export const theme = createTheme({
     },
     text: {
       primary: BLACK,
-      light: WHITE
+      secondary: COD_GRAY,
+      subInfo: DOVE_GRAY,
+      light: WHITE,
+      disabled: SILVER
     },
     background: {
       paper: ALABASTER
@@ -44,6 +49,12 @@ export const theme = createTheme({
       lineHeight: '48px',
       letterSpacing: '0.1px'
     },
+    h4: {
+      fontWeight: 600,
+      fontSize: '17px',
+      lineHeight: '20px',
+      letterSpacing: 0
+    },
     body1: {
       fontSize: 16,
       lineHeight: '22px'
@@ -51,6 +62,12 @@ export const theme = createTheme({
     body2: {
       fontSize: 14,
       lineHeight: '20px'
+    },
+    caption: {
+      fontWeight: 300,
+      fontSize: '14px',
+      lineHeight: '24px',
+      letterSpacing: '0.1px'
     }
   },
   components: {
@@ -106,6 +123,14 @@ export const theme = createTheme({
         paper: {
           color: WHITE,
           backgroundColor: DEEP_SEA_GREEN
+        }
+      }
+    },
+    MuiCardContent: {
+      defaultProps: {
+        style: {
+          paddingLeft: '20px',
+          paddingRight: '20px'
         }
       }
     }

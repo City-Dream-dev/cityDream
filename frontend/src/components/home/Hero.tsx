@@ -46,6 +46,7 @@ export const Hero: FC<HomeHeroProps> = ({ moreMd, lessLg }) => {
               <Box position={'relative'}>
                 {moreMd && (
                   <>
+                    {/* Orange boxes */}
                     <Box
                       bgcolor={'primary.main'}
                       width={squareWidth}
@@ -70,11 +71,15 @@ export const Hero: FC<HomeHeroProps> = ({ moreMd, lessLg }) => {
                       top={0}
                       left={-squareWidth}
                     />
+                    {/* END Orange boxes */}
                   </>
                 )}
-                <Box></Box>
-                <Box></Box>
-                <Image objectFit={'contain'} src={heroImage}/>
+                <Image
+                  src={heroImage}
+                  objectFit={'cover'}
+                  title={'Разом до втілення ідей'}
+                  alt={'Команда складає руки перед девізом'}
+                />
               </Box>
             </Grid>
           </Grid>
