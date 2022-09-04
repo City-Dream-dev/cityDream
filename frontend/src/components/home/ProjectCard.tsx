@@ -79,8 +79,8 @@ export const ProjectCard: FC<ProjectCardProps> = (
               display={'-webkit-box'}
               overflow={'hidden'}
               sx={{
-                ' -webkit-box-orient': 'vertical',
-                '-webkit-line-clamp': '6 !important'
+                WebkitBoxOrient: 'vertical',
+                WebkitLineClamp: '6 !important'
               }}
             >
               {description}
