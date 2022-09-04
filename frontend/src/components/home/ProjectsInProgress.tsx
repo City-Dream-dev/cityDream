@@ -3,9 +3,12 @@ import { ProjectsList } from './ProjectsList';
 
 import { PROJECTS_LIST_MOCK } from '@mocks/projects-list-mock';
 
-export const DreamsInProgress = () => (
-  <Box bgcolor={'background.paper'} component={'section'}>
-
+export const ProjectsInProgress = () => (
+  <Box
+    id="projects-in-progress"
+    bgcolor={'background.paper'}
+    component={'section'}
+  >
     <Container>
       <Box py={'52px'}>
         <Box mb={4} textAlign={'center'}>

@@ -2,9 +2,10 @@ import { FC } from 'react';
 import Image from 'next/image';
 
 import { Box } from '@mui/system';
-import { Button, Container, Grid, Typography } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 
 import heroImage from '@assets/images/cd-hero-image.png';
+import { ButtonShareDream } from './ButtonShareDream';
 
 type HomeHeroProps = {
   moreMd: boolean;
@@ -36,9 +37,7 @@ export const Hero: FC<HomeHeroProps> = ({ moreMd, lessLg }) => {
                   </Typography>
                 </Box>
                 <Box>
-                  <Button variant={'contained'} size={'large'}>
-                    Поділитися мрією
-                  </Button>
+                  <ButtonShareDream size={'large'}/>
                 </Box>
               </Box>
             </Grid>

@@ -1,6 +1,9 @@
-import { Box } from '@mui/system';
 import Link from 'next/link';
+
+import { Box } from '@mui/system';
 import { Button, Typography } from '@mui/material';
+
+import { ButtonShareDream } from '../home/ButtonShareDream';
 
 export const NavMenu = () => (
   <>
@@ -17,7 +20,7 @@ export const NavMenu = () => (
         </Link>
       </Box>
       <Box marginX={3}>
-        <Link href={'/#pro-nas'} passHref>
+        <Link href={'/#projects-in-progress'} passHref>
           <Typography
             component={'a'}
             color={'text.light'}
@@ -27,11 +30,7 @@ export const NavMenu = () => (
           </Typography>
         </Link>
       </Box>
-      <Button
-        variant={'contained'}
-      >
-        Поділитися мрією
-      </Button>
+      <ButtonShareDream/>
     </Box>
     <Box display={'flex'} alignItems={'center'}>
       <Box mr={2}>
