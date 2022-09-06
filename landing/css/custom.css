@@ -13,15 +13,8 @@
   -webkit-border-radius:10px;
 }
 
-@media (max-width: 640px) {
-  .form-link {
-    padding: 0 30px;
-  }
-}
-
 .banner {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -32,7 +25,7 @@
 }
 
 .banner.banner-bottom {
-  padding: 8px;
+  padding: 8px 24px;
 }
 
 .banner-text {
@@ -55,7 +48,26 @@
   margin-right: 16px;
 }
 
-
 .header {
   top: 48px;
+}
+
+@media (max-width: 640px) {
+  .form-link {
+    padding: 0 30px;
+  }
+
+  .banner {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .banner-image {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .banner-bottom-text {
+    max-width: initial;
+  }
 }
