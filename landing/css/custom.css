@@ -68,6 +68,6 @@
   }
 
   .banner-bottom-text {
-    max-width: initial;
+    max-width: 360px;
   }
 }
