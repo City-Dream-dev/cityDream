@@ -40,7 +40,7 @@
   font-size: 11px;
   line-height: 17px;
   font-weight: 400;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .banner-image {
@@ -65,9 +65,5 @@
   .banner-image {
     margin-right: 0;
     margin-bottom: 12px;
-  }
-
-  .banner-bottom-text {
-    max-width: 360px;
   }
 }
