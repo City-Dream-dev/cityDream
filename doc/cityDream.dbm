@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+ Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.9.4" use-changelog="false" last-position="0,0" last-zoom="1.55" max-obj-count="8"
+	 default-schema="public" default-owner="postgres"
+	 layers="Default layer"
+	 active-layers="0"
+	 layer-name-colors="#000000"
+	 layer-rect-colors="#b4b4b4"
+	 show-layer-names="false" show-layer-rects="false">
+<database name="city_dream" is-template="false" allow-conns="true">
+</database>
+
+<schema name="public" layers="0" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<schema name="user_service" layers="0" rect-visible="true" fill-color="#e1e1e1">
+	<role name="postgres"/>
+</schema>
+
+<schema name="media" layers="0" rect-visible="true" fill-color="#e1e1e1">
+	<role name="postgres"/>
+</schema>
+
+<schema name="dream_service" layers="0" rect-visible="true" fill-color="#e1e1e1">
+	<role name="postgres"/>
+</schema>
+
+<table name="users" layers="0" collapse-mode="2" max-obj-count="9" z-value="0">
+	<schema name="user_service"/>
+	<role name="postgres"/>
+	<position x="40" y="240"/>
+	<column name="id" not-null="true">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="fb_id">
+		<type name="text" length="0"/>
+	</column>
+	<column name="tg_id">
+		<type name="text" length="0"/>
+	</column>
+	<column name="trello_id">
+		<type name="text" length="0"/>
+	</column>
+	<column name="first_name">
+		<type name="text" length="0"/>
+	</column>
+	<column name="last_name">
+		<type name="text" length="0"/>
+	</column>
+	<column name="avatar">
+		<type name="text" length="0"/>
+	</column>
+	<column name="roles">
+		<type name="text" length="0" dimension="1"/>
+	</column>
+	<constraint name="user_pk" type="pk-constr" table="user_service.users">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="dreams" layers="0" collapse-mode="2" max-obj-count="10" z-value="0">
+	<schema name="dream_service"/>
+	<role name="postgres"/>
+	<position x="420" y="300"/>
+	<column name="id" not-null="true">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="trello_id">
+		<type name="text" length="0"/>
+	</column>
+	<column name="title">
+		<type name="text" length="0"/>
+	</column>
+	<column name="description">
+		<type name="text" length="0"/>
+	</column>
+	<column name="main_picture_wide_id">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="main_picture_portret_id">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="owner_id" not-null="true">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="manager_id">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="status" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="dream_pk" type="pk-constr" table="dream_service.dreams">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="resources" layers="0" collapse-mode="2" max-obj-count="7" z-value="0">
+	<schema name="dream_service"/>
+	<role name="postgres"/>
+	<position x="780" y="140"/>
+	<column name="id" not-null="true">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="title" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="dream_id" not-null="true">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="measure" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="amount" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="stage_id" not-null="true">
+		<type name="uuid" length="0"/>
+	</column>
+	<constraint name="resources_pk" type="pk-constr" table="dream_service.resources">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="contributions" layers="0" collapse-mode="2" max-obj-count="4" z-value="0">
+	<schema name="dream_service"/>
+	<role name="postgres"/>
+	<position x="420" y="140"/>
+	<column name="id" not-null="true">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="resource_id">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="user_id">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="list">
+		<type name="text" length="0"/>
+		<comment><![CDATA[List name in Trello]]></comment>
+	</column>
+	<constraint name="contributions_pk" type="pk-constr" table="dream_service.contributions">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="dream_stage" layers="0" collapse-mode="2" max-obj-count="4" z-value="0">
+	<schema name="dream_service"/>
+	<role name="postgres"/>
+	<position x="780" y="400"/>
+	<column name="id" not-null="true">
+		<type name="uuid" length="0"/>
+	</column>
+	<column name="trello_id">
+		<type name="text" length="0"/>
+	</column>
+	<column name="name">
+		<type name="text" length="0"/>
+	</column>
+	<column name="dream_id" not-null="true">
+		<type name="uuid" length="0"/>
+	</column>
+	<constraint name="dream_stage_pk" type="pk-constr" table="dream_service.dream_stage">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<constraint name="owner" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="user_service.users" table="dream_service.dreams">
+	<columns names="owner_id" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="manager" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="user_service.users" table="dream_service.dreams">
+	<columns names="manager_id" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="dream" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dream_service.dreams" table="dream_service.resources">
+	<columns names="dream_id" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="resource_stage" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dream_service.dream_stage" table="dream_service.resources">
+	<columns names="stage_id" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="contribution" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dream_service.resources" table="dream_service.contributions">
+	<columns names="resource_id" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="user" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="user_service.users" table="dream_service.contributions">
+	<columns names="user_id" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="dream_stage" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dream_service.dreams" table="dream_service.dream_stage">
+	<columns names="dream_id" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<relationship name="user_own_dreams" type="relfk" layers="0"
+	 src-table="dream_service.dreams"
+	 dst-table="user_service.users" reference-fk="owner"
+	 src-required="false" dst-required="true">
+	<label ref-type="name-label">
+		<position x="-4.19824" y="-24.5254"/>
+	</label>
+</relationship>
+
+<relationship name="dream_resources" type="relfk" layers="0"
+	 src-table="dream_service.resources"
+	 dst-table="dream_service.dreams" reference-fk="dream"
+	 src-required="false" dst-required="true">
+	<label ref-type="name-label">
+		<position x="5.43457" y="-21.8127"/>
+	</label>
+</relationship>
+
+<relationship name="rel_contributions_resources" type="relfk" layers="0"
+	 src-table="dream_service.contributions"
+	 dst-table="dream_service.resources" reference-fk="contribution"
+	 src-required="false" dst-required="false">
+	<label ref-type="name-label">
+		<position x="-4.00167" y="-50.4028"/>
+	</label>
+</relationship>
+
+<relationship name="user_contributions" type="relfk" layers="0"
+	 src-table="dream_service.contributions"
+	 dst-table="user_service.users" reference-fk="user"
+	 src-required="false" dst-required="false">
+	<label ref-type="name-label">
+		<position x="21.3564" y="-13.511"/>
+	</label>
+</relationship>
+
+<relationship name="rel_resources_dream_stage" type="relfk" layers="0"
+	 src-table="dream_service.resources"
+	 dst-table="dream_service.dream_stage" reference-fk="resource_stage"
+	 src-required="false" dst-required="true">
+	<label ref-type="name-label">
+		<position x="22.3871" y="-12.1323"/>
+	</label>
+</relationship>
+
+<relationship name="rel_dream_stage_dreams" type="relfk" layers="0"
+	 src-table="dream_service.dream_stage"
+	 dst-table="dream_service.dreams" reference-fk="dream_stage"
+	 src-required="false" dst-required="true">
+	<label ref-type="name-label">
+		<position x="2.93457" y="11.3446"/>
+	</label>
+</relationship>
+
+<relationship name="manager_manage_dreams" type="relfk" layers="0"
+	 src-table="dream_service.dreams"
+	 dst-table="user_service.users" reference-fk="manager"
+	 src-required="false" dst-required="false">
+	<label ref-type="name-label">
+		<position x="-6.19824" y="-9.57447"/>
+	</label>
+</relationship>
+
+</dbmodel>

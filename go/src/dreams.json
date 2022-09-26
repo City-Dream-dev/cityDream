@@ -1,0 +1,471 @@
+[
+  {
+    "ID": "012c1b8f-dbb5-409a-b944-b5541d48df70",
+    "TrelloID": "62cb5d1065fd2459149e0534",
+    "Title": "Кейс 1. Вело парковка у центрі міста",
+    "Description": "Опис проблеми (мотиваційна частина)\n----------------\nТут опишемо чого так сталося\nщо нам дуже сильно необхідна парковка для вєліків.\nТому що я приїзжаю до центру міста на вєліку, і хочу його десь\nпарконуть так шоб мій вєлік не поїхав кататься без мене.\n\n![вєлопарковка в Барселоні](https://iot.ru/upload/resize_cache/iblock/b1b/860_490_1/b1b91ddb6f50d6212cc6cfc742efcd33.jpg)\n\nОпис рішення\n--------------\nТут важливо перерахувати етапи реалізації мрії та чіткі критерії переходу від одного етапу в інший. Наприклад:\n- Вивчення міжнародного досвіду (провести 5 інтервʼю зі світовими лідерами у впровадженні вєлопарковок у світі)\n- Створення проекту (готовий проект в pdf форматі\n- Збір ресурсів (фактичний старт мрії)\n- Монтаж і запуск (фактична реалізація мріЇ)\n",
+    "OwnerID": "164d8181-51e1-4545-b14f-431710d59fe9",
+    "Owner": {
+      "ID": "164d8181-51e1-4545-b14f-431710d59fe9",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "spolischook",
+        "Valid": true
+      },
+      "FirstName": {
+        "String": "spolischook",
+        "Valid": true
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "https://trello-members.s3.amazonaws.com/52e8bd83a1cc174f581942c9/8d87077fced0eea3aa5a78107cf44f43/170.png",
+        "Valid": true
+      },
+      "Roles": [
+        "admin"
+      ]
+    },
+    "ManagerID": "164d8181-51e1-4545-b14f-431710d59fe9",
+    "Manager": {
+      "ID": "00000000-0000-0000-0000-000000000000",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "",
+        "Valid": false
+      },
+      "FirstName": {
+        "String": "",
+        "Valid": false
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "",
+        "Valid": false
+      },
+      "Roles": null
+    },
+    "Status": "To Do"
+  },
+  {
+    "ID": "4a244ae6-1690-47bc-863b-e7411274b646",
+    "TrelloID": "62d564fd7db602463d12d6ae",
+    "Title": "Вивчення міжнародного досвіду встановлення велопарковок",
+    "Description": "",
+    "OwnerID": "164d8181-51e1-4545-b14f-431710d59fe9",
+    "Owner": {
+      "ID": "164d8181-51e1-4545-b14f-431710d59fe9",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "spolischook",
+        "Valid": true
+      },
+      "FirstName": {
+        "String": "spolischook",
+        "Valid": true
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "https://trello-members.s3.amazonaws.com/52e8bd83a1cc174f581942c9/8d87077fced0eea3aa5a78107cf44f43/170.png",
+        "Valid": true
+      },
+      "Roles": [
+        "admin"
+      ]
+    },
+    "ManagerID": "164d8181-51e1-4545-b14f-431710d59fe9",
+    "Manager": {
+      "ID": "00000000-0000-0000-0000-000000000000",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "",
+        "Valid": false
+      },
+      "FirstName": {
+        "String": "",
+        "Valid": false
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "",
+        "Valid": false
+      },
+      "Roles": null
+    },
+    "Status": "To Do"
+  },
+  {
+    "ID": "26dda41c-755c-46ff-b4c3-7b464dab3382",
+    "TrelloID": "6086b069aee41b34557be257",
+    "Title": "Кейс 2. Туристичний знак Ч - Бренд Черкащини",
+    "Description": "200К за знак",
+    "OwnerID": "65f0a54c-3a39-4dde-9dd8-111edf2d8033",
+    "Owner": {
+      "ID": "65f0a54c-3a39-4dde-9dd8-111edf2d8033",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "denysandrushchenko",
+        "Valid": true
+      },
+      "FirstName": {
+        "String": "daorient",
+        "Valid": true
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "https://trello-members.s3.amazonaws.com/526d2c358b78f48475004003/cf049dd942ecef6180a1517da534beec/170.png",
+        "Valid": true
+      },
+      "Roles": [
+        "admin"
+      ]
+    },
+    "ManagerID": "65f0a54c-3a39-4dde-9dd8-111edf2d8033",
+    "Manager": {
+      "ID": "00000000-0000-0000-0000-000000000000",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "",
+        "Valid": false
+      },
+      "FirstName": {
+        "String": "",
+        "Valid": false
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "",
+        "Valid": false
+      },
+      "Roles": null
+    },
+    "Status": "To Do"
+  },
+  {
+    "ID": "2ea1285f-9dee-4b14-9f46-66ca0b2cc9f8",
+    "TrelloID": "62fe4f073bed7c24e5ee6fcf",
+    "Title": "Облаштування сховища на Сахарці",
+    "Description": "**Опис проблеми**\nЗанедбане бомбосховище в районі Сахарки може слугувати укриттям для мінімум 200 людей з найближчих будинків. Війна не закінчилася і ракети не перестали літати. Є гостра потреба облаштувати укриття поряд з багатоквартирними будинками.\n\n\n**Опис рішення**\nРеалізація цієї ініціативи проходитиме в декілька етапів:\n1. Прибирання. Збір ресурсів до 25 серпня.\n2. Облаштування. Збір ресурсів до 3 вересня. ",
+    "OwnerID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+    "Owner": {
+      "ID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "mandrushchenko",
+        "Valid": true
+      },
+      "FirstName": {
+        "String": "Mykhailo",
+        "Valid": true
+      },
+      "LastName": {
+        "String": "Andrushchenko",
+        "Valid": true
+      },
+      "Avatar": {
+        "String": "https://trello-members.s3.amazonaws.com/5f9e7abca256d478992ab25e/42c3944b69e9dc2689466ced06b1c400/170.png",
+        "Valid": true
+      },
+      "Roles": [
+        "admin"
+      ]
+    },
+    "ManagerID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+    "Manager": {
+      "ID": "00000000-0000-0000-0000-000000000000",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "",
+        "Valid": false
+      },
+      "FirstName": {
+        "String": "",
+        "Valid": false
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "",
+        "Valid": false
+      },
+      "Roles": null
+    },
+    "Status": "To Do"
+  },
+  {
+    "ID": "fa463512-9395-4d76-8665-43cbc7d7e21a",
+    "TrelloID": "630244d8b9a3e6004cee2642",
+    "Title": "Облаштування бомбосховища на Консервному",
+    "Description": "**Опис проблеми**\nВ районі бувшого консервного заводу є занедбане навіть не укриття, а БОМБОСХОВИЩЕ на 1300-1500 людей. Але воно потребує прибирання, вирішення питання зі світлом та вхідними дверима. Відкриваємо збір ресурсів та людей для облаштування безпечного місця для багатьох людей, що живуть поруч. \n\n**Опис рішення**\nРеалізація цієї ініціативи проходитиме в декілька етапів:\n1. Прибирання. Збір ресурсів до 22 серпня.\n2. Монтаж світильників. Збір ресурсів до 25 серпня. \n3. Встановлення дверей. Збір ресурсів до 30 серпня. ",
+    "OwnerID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+    "Owner": {
+      "ID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "mandrushchenko",
+        "Valid": true
+      },
+      "FirstName": {
+        "String": "Mykhailo",
+        "Valid": true
+      },
+      "LastName": {
+        "String": "Andrushchenko",
+        "Valid": true
+      },
+      "Avatar": {
+        "String": "https://trello-members.s3.amazonaws.com/5f9e7abca256d478992ab25e/42c3944b69e9dc2689466ced06b1c400/170.png",
+        "Valid": true
+      },
+      "Roles": [
+        "admin"
+      ]
+    },
+    "ManagerID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+    "Manager": {
+      "ID": "00000000-0000-0000-0000-000000000000",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "",
+        "Valid": false
+      },
+      "FirstName": {
+        "String": "",
+        "Valid": false
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "",
+        "Valid": false
+      },
+      "Roles": null
+    },
+    "Status": "To Do"
+  },
+  {
+    "ID": "3d827746-f19a-4277-a4b1-fdd78b487be3",
+    "TrelloID": "6302482f7f254300d89ef30e",
+    "Title": "Облаштування сховища за адресою вул. Хоменка, 14/1",
+    "Description": "**Опис проблеми**\nПривіт) За адресою вул. Хоменка, 14/1, де знаходиться колегіум «Берегиня» є сховище. Ми його прибрали та облаштували найнеобхіднішим: місцями для сидіння, освітленням. Зараз потребуємо допомоги у зборі ресурсів для наповнення побутовими речима. \n\n**Опис рішення**\nРеалізація цієї ініціативи проходитиме в один етап:\n1. Наповнення необхідними речима. Збір ресурсів до 1 вересня. ",
+    "OwnerID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+    "Owner": {
+      "ID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "mandrushchenko",
+        "Valid": true
+      },
+      "FirstName": {
+        "String": "Mykhailo",
+        "Valid": true
+      },
+      "LastName": {
+        "String": "Andrushchenko",
+        "Valid": true
+      },
+      "Avatar": {
+        "String": "https://trello-members.s3.amazonaws.com/5f9e7abca256d478992ab25e/42c3944b69e9dc2689466ced06b1c400/170.png",
+        "Valid": true
+      },
+      "Roles": [
+        "admin"
+      ]
+    },
+    "ManagerID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+    "Manager": {
+      "ID": "00000000-0000-0000-0000-000000000000",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "",
+        "Valid": false
+      },
+      "FirstName": {
+        "String": "",
+        "Valid": false
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "",
+        "Valid": false
+      },
+      "Roles": null
+    },
+    "Status": "To Do"
+  },
+  {
+    "ID": "bae67c6d-50e2-4bf3-8933-33b3b0b97a66",
+    "TrelloID": "63024f07923b4400442e5af2",
+    "Title": "Підключення електрики у підвал на Фотоприладі",
+    "Description": "**Опис проблеми**\nДрузі, продовжуємо знаходити та облаштовувати підвали та закинуті бомбосховища. \nПід «фотоприборівською» їдальнею також є УКРИТТЯ, орієнтовно на 200-300 людей і це тільки половина підвалу в яку нам вдалось попасти. Але там поки що в більшій його частині немає світла. Давайте зберемося та підготуємо приміщення. \n\n**Опис рішення**\nРеалізація цієї ініціативи проходитиме в один етап:\n1 Підключення електрики. Збір ресурсів до 2 вересня.",
+    "OwnerID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+    "Owner": {
+      "ID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "mandrushchenko",
+        "Valid": true
+      },
+      "FirstName": {
+        "String": "Mykhailo",
+        "Valid": true
+      },
+      "LastName": {
+        "String": "Andrushchenko",
+        "Valid": true
+      },
+      "Avatar": {
+        "String": "https://trello-members.s3.amazonaws.com/5f9e7abca256d478992ab25e/42c3944b69e9dc2689466ced06b1c400/170.png",
+        "Valid": true
+      },
+      "Roles": [
+        "admin"
+      ]
+    },
+    "ManagerID": "1757c910-59c8-4a43-851f-5ff7816493cf",
+    "Manager": {
+      "ID": "00000000-0000-0000-0000-000000000000",
+      "FbID": {
+        "String": "",
+        "Valid": false
+      },
+      "TgID": {
+        "String": "",
+        "Valid": false
+      },
+      "TrelloID": {
+        "String": "",
+        "Valid": false
+      },
+      "FirstName": {
+        "String": "",
+        "Valid": false
+      },
+      "LastName": {
+        "String": "",
+        "Valid": false
+      },
+      "Avatar": {
+        "String": "",
+        "Valid": false
+      },
+      "Roles": null
+    },
+    "Status": "To Do"
+  }
+]
