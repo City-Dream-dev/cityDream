@@ -47,16 +47,16 @@ const mockProjects = [
 
 const getProjectCard = (project) => `
   <div class="project-card__image">
-    <img src="${project.image}" alt="${project.title}">
+    <img src="${project.CoverImage}" alt="${project.Title}">
   <div>
   <h3 class="project-card__title">
-    ${project.title}
+    ${project.Title}
   </h3>
   <p class="project-card__author">
-    ${project.author.name}
+    ${project.Owner.FirstName} ${project.Owner.LastName}
   </p>
   <p class="project-card__description">
-     ${project.short_description}
+     ${project.Description}
   </p>
 `;
 
@@ -64,25 +64,25 @@ const getProjectCard = (project) => `
   const projectsBlock = document.getElementsByClassName('js-projects-block')[0];
 
   // TODO: replace mock data with request. Need to put correct url
-  // fetch('url')
-  //   .then(data => data.json())
-  //   .then(data => {
-  //   data?.projects?.forEach((project) => {
-  //     const projectCardContent = getProjectCard(project);
-  //     const projectCard = document.createElement('div');
+  fetch('https://www.citydream.pp.ua/api/dreams.json')
+    .then(data => data.json())
+    .then(data => {
+    data?.projects?.forEach((project) => {
+      const projectCardContent = getProjectCard(project);
+      const projectCard = document.createElement('div');
+
+      projectCard.setAttribute('class', 'project-card');
+      projectCard.innerHTML = projectCardContent;
+      projectsBlock.appendChild(projectCard);
+    })
+  }).catch(error => console.error(error));
+
+  // mockProjects.forEach((project) => {
+  //   const projectCardContent = getProjectCard(project);
+  //   const projectCard = document.createElement('div');
   //
-  //     projectCard.setAttribute('class', 'project-card');
-  //     projectCard.innerHTML = projectCardContent;
-  //     projectsBlock.appendChild(projectCard);
-  //   })
-  // }).catch(error => console.error(error));
-
-  mockProjects.forEach((project) => {
-    const projectCardContent = getProjectCard(project);
-    const projectCard = document.createElement('div');
-
-    projectCard.setAttribute('class', 'project-card');
-    projectCard.innerHTML = projectCardContent;
-    projectsBlock.appendChild(projectCard);
-  })
+  //   projectCard.setAttribute('class', 'project-card');
+  //   projectCard.innerHTML = projectCardContent;
+  //   projectsBlock.appendChild(projectCard);
+  // })
 })();
