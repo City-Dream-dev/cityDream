@@ -61,7 +61,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	</constraint>
 </table>
 
-<table name="dreams" layers="0" collapse-mode="2" max-obj-count="10" z-value="0">
+<table name="dreams" layers="0" collapse-mode="2" max-obj-count="9" z-value="0">
 	<schema name="dream_service"/>
 	<role name="postgres"/>
 	<position x="420" y="300"/>
@@ -77,11 +77,8 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="description">
 		<type name="text" length="0"/>
 	</column>
-	<column name="main_picture_wide_id">
-		<type name="uuid" length="0"/>
-	</column>
-	<column name="main_picture_portret_id">
-		<type name="uuid" length="0"/>
+	<column name="cover_image">
+		<type name="text" length="0"/>
 	</column>
 	<column name="owner_id" not-null="true">
 		<type name="uuid" length="0"/>
