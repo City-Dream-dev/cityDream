@@ -14,7 +14,7 @@ resource "aws_cloudfront_distribution" "www_s3_distribution" {
   }
 
   origin {
-    domain_name = "asdf"
+    domain_name = aws_s3_bucket.api_bucket.bucket_regional_domain_name
     origin_id   = "S3-api.${var.bucket_name}"
   }
 
