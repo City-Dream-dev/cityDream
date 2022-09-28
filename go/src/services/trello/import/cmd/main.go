@@ -55,9 +55,15 @@ func main() {
 		for _, card := range cards {
 			members, err := card.GetMembers()
 			checkErr(err)
+			firstAdmin := getUser(members[0]) // map user by first member from trello card
 
-			firstAdmin := getUser(members[0])              // map user by first member from trello card
-			dream := mapping.Dream(list, card, firstAdmin) // map dream from trello card
+			att, err := card.GetAttachments(trello.Defaults())
+			checkErr(err)
+			if len(att) == 0 {
+				panic("card has no cover")
+			}
+
+			dream := mapping.Dream(list, card, firstAdmin, att[0]) // map dream from trello card
 			err = dRepo.CreateDream(&dream)
 			checkErr(err)
 

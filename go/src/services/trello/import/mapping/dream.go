@@ -7,11 +7,12 @@ import (
 	"github.com/google/uuid"
 )
 
-func Dream(l *trello.List, c *trello.Card, owner userModel.User) model.Dream {
+func Dream(l *trello.List, c *trello.Card, owner userModel.User, cover *trello.Attachment) model.Dream {
 	return model.Dream{
 		ID:          uuid.New(),
 		TrelloID:    c.ID,
 		Title:       c.Name,
+		CoverImage:  cover.URL,
 		Description: c.Desc,
 		OwnerID:     owner.ID,
 		Owner:       owner,
