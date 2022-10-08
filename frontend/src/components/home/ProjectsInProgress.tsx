@@ -10,7 +10,7 @@ export const ProjectsInProgress = () => (
     component={'section'}
   >
     <Container>
-      <Box py={'52px'}>
+      <Box pt={'52px'} pb={'102px'}>
         <Box mb={4} textAlign={'center'}>
           <Typography component={'h2'} variant={'h2'}>
             Проекти, які чекають на втілення

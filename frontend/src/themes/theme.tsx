@@ -147,6 +147,6 @@ export const theme = createTheme({
           paddingRight: '20px'
         }
       }
-    }
+    },
   }
 });
