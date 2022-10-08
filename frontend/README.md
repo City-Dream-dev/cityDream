@@ -18,6 +18,12 @@
 npm install
 ```
 
+Add `.env` file in the root of the folder
+```
+FACEBOOK_ID=000000000000000
+FACEBOOK_SECRET=00000000000000000000000000000000
+```
+
 #### Run dev server
 
 ```bash
