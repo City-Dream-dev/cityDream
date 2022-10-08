@@ -29,17 +29,14 @@ export const DrawerMenu = () => (
         Поділитися мрією
       </Button>
 
-      <Stack spacing={4} justifyContent={'flex-end'} flexGrow={1}>
-        <Box>
-          <Button variant={'contained'}>Sign Up</Button>
-        </Box>
+      <Stack justifyContent={'flex-end'} flexGrow={1}>
         <Box>
           <Button
             variant={'outlined'}
             color={'inherit'}
             sx={{ borderColor: 'rgba(255, 255, 255, 0.5)' }}
           >
-            Log in
+            Login with Facebook
           </Button>
         </Box>
       </Stack>

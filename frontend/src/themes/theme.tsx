@@ -24,6 +24,9 @@ export const theme = createTheme({
     secondary: {
       main: DEEP_SEA_GREEN,
     },
+    info: {
+      main: GALLERY
+    },
     text: {
       primary: BLACK,
       secondary: COD_GRAY,
@@ -33,6 +36,12 @@ export const theme = createTheme({
     },
     background: {
       paper: ALABASTER
+    },
+    success: {
+      main: JADE
+    },
+    grey: {
+      '50': GALLERY
     }
   },
   typography: {
@@ -48,6 +57,11 @@ export const theme = createTheme({
       fontSize: '33px',
       lineHeight: '48px',
       letterSpacing: '0.1px'
+    },
+    h3: {
+      fontWeight: 600,
+      fontSize: '24px',
+      lineHeight: '32px'
     },
     h4: {
       fontWeight: 600,

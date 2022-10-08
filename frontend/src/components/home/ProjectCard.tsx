@@ -11,7 +11,7 @@ import {
 } from '@mui/material';
 
 export type ProjectCardProps = {
-  href: string;
+  id: string;
   src: StaticImageData;
   alt: string;
   title: string;
@@ -21,7 +21,7 @@ export type ProjectCardProps = {
 
 export const ProjectCard: FC<ProjectCardProps> = (
   {
-    href,
+    id,
     src,
     alt,
     title,
@@ -40,7 +40,7 @@ export const ProjectCard: FC<ProjectCardProps> = (
   };
 
   return (
-    <Link href={href || ''}>
+    <Link href={`/project/${id}`}>
       <Card
         elevation={elevation}
         onMouseOver={onMouseOver}

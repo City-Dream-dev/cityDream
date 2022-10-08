@@ -32,19 +32,14 @@ export const NavMenu = () => (
       </Box>
       <ButtonShareDream/>
     </Box>
-    <Box display={'flex'} alignItems={'center'}>
-      <Box mr={2}>
-        <Button
-          variant={'outlined'}
-          color={'inherit'}
-          sx={{ borderColor: 'rgba(255, 255, 255, 0.5)' }}
-        >
-          Log in
-        </Button>
-      </Box>
-      <Box>
-        <Button variant={'contained'}>Sign Up</Button>
-      </Box>
+    <Box>
+      <Button
+        variant={'outlined'}
+        color={'inherit'}
+        sx={{ borderColor: 'rgba(255, 255, 255, 0.5)' }}
+      >
+        Login with Facebook
+      </Button>
     </Box>
   </>
 );
