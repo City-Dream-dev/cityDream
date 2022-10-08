@@ -2,12 +2,10 @@ package main
 
 import (
 	"context"
+	"github.com/City-Dream/backend/api/trello/router"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/awslabs/aws-lambda-go-api-proxy/gin"
-
-	"github.com/City-Dream/trello-bridge/router"
 )
 
 var ginLambda *ginadapter.GinLambda
