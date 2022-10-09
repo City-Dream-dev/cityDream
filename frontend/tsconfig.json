@@ -20,6 +20,8 @@
       "@assets/images/*": ["src/assets/images/*"],
       "@themes": ["src/themes/index.ts"],
       "@mocks/*": ["src/mocks/*"],
+      "@api": ["src/api/index.ts"],
+      "@context": ["src/context/index.ts"],
       "@components": ["src/components/index.ts"]
     }
   },

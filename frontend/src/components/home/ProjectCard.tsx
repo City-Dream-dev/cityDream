@@ -12,10 +12,12 @@ import {
 
 export type ProjectCardProps = {
   id: string;
-  src: StaticImageData;
+  src: string | StaticImageData;
   alt: string;
   title: string;
-  author: string;
+  authorAvatar: string;
+  authorFirstName: string;
+  authorLastName: string;
   description: string;
 }
 
@@ -25,7 +27,8 @@ export const ProjectCard: FC<ProjectCardProps> = (
     src,
     alt,
     title,
-    author,
+    authorLastName,
+    authorFirstName,
     description
   }
 ) => {
@@ -46,7 +49,7 @@ export const ProjectCard: FC<ProjectCardProps> = (
         onMouseOver={onMouseOver}
         onMouseLeave={onMouseLeave}
         aria-labelledby={'project-card'}
-        sx={{ cursor: 'pointer' }}
+        sx={{ cursor: 'pointer', height: '100%' }}
       >
         <CardMedia sx={{
           '& > span': {
@@ -55,14 +58,22 @@ export const ProjectCard: FC<ProjectCardProps> = (
           }
         }}
         >
-          <Image objectFit={'cover'} src={src} alt={alt}/>
+          <Image objectFit={'cover'} width={300} height={200} src={src} alt={alt}/>
         </CardMedia>
         <CardContent>
           <Box>
             <Typography
               mb={1}
               component={'h3'}
-              variant={'h4'}>
+              variant={'h4'}
+              height={40}
+              display={'-webkit-box'}
+              overflow={'hidden'}
+              sx={{
+                WebkitBoxOrient: 'vertical',
+                WebkitLineClamp: '2 !important'
+              }}
+            >
               {title}
             </Typography>
             <Box mb={'10px'}>
@@ -70,7 +81,7 @@ export const ProjectCard: FC<ProjectCardProps> = (
                 variant={'caption'}
                 color={'text.subInfo'}
               >
-                {author}
+                {authorFirstName} {authorLastName}
               </Typography>
             </Box>
 

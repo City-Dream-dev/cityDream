@@ -4,27 +4,44 @@ import { Avatar, Box, Stack, Typography } from '@mui/material';
 
 import { StepProgress } from '.';
 
-import avatar from '@mocks//images/avatar-mock.jpeg';
+import { useProjectsProvider } from '@context';
 
 export const Description = () => {
+  const { project: {
+    title,
+    description,
+    authorAvatar,
+    authorLastName,
+    authorFirstName
+  } } = useProjectsProvider();
+
   return (
     <Box>
       <Typography component={'h1'} variant={'h3'}>
-        Туристичний знак на в'їзді до Черкаської області
+        {title}
       </Typography>
       <Box display={'flex'} alignItems={'center'} my={3}>
         <Box mr={2}>
           <Avatar>
-            {avatar ? <Image src={avatar} alt={'User avatar icon'}/> : 'КА'}
+            {authorAvatar
+              ? (
+                <Image
+                  src={authorAvatar}
+                  width={40}
+                  height={40}
+                  alt={'User avatar icon'}
+                />
+              )
+              : authorFirstName[0] + authorLastName[0]}
           </Avatar>
         </Box>
         <Typography variant={'caption'} color={'text.subInfo'}>
-          Крутий автор
+          {authorFirstName} {authorLastName}
         </Typography>
       </Box>
-      <Box my={3}>
+      <Box my={3} overflow={'hidden'}>
         <Typography color={'text.secondary'} fontWeight={'fontWeightLight'}>
-          У рамках просування нового бренду Черкащини "місце сили" ми хочемо залучити місцевий бізнес, щоб встановити цей крутий знак – майбутню інста-локацію.
+          {description}
         </Typography>
       </Box>
       <Stack spacing={2}>

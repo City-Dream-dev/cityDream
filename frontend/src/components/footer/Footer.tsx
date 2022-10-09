@@ -13,7 +13,6 @@ import iconFacebook from '@assets/icons/ic-facebook.svg';
 import logoFounders from '@assets/images/logo-founders.png';
 
 export const Footer = () => {
-  const isLessLg = useMediaQuery(theme.breakpoints.down('lg'));
   const isLessMd = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
@@ -45,7 +44,8 @@ export const Footer = () => {
           <Box>
             <Typography
               color={'text.light'}
-              fontSize={isLessLg ? '14px' : '17px'}
+              fontWeight={'lighter'}
+              fontSize={isLessMd ? '14px' : '17px'}
             >
               Цей сайт створено за підтримки Європейського Союзу у межах проєкту
               “Інтерналізація Українського кластерного альянсу: покращення

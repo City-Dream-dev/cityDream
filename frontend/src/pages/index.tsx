@@ -1,9 +1,14 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import { Home } from '../components';
+import { Home, ProjectCardProps } from '@components';
+import { getProjects } from '@api';
 
-const App: NextPage = () => {
+type HomePageProps = {
+  projects: ProjectCardProps[];
+}
+
+const HomePage: NextPage<HomePageProps> = ({ projects }) => {
 
   return (
     <div>
@@ -12,9 +17,19 @@ const App: NextPage = () => {
         <meta name="description" content="City dream"/>
         <link rel="icon" href="/frontend/public/favicon.ico"/>
       </Head>
-      <Home/>
+      <Home projects={projects}/>
     </div>
   );
 };
 
-export default App;
+export const getStaticProps = async () => {
+  const projects = await getProjects();
+
+  return {
+    props: {
+      projects,
+    },
+  };
+};
+
+export default HomePage;

@@ -1,12 +1,25 @@
+import { FC } from 'react';
+
 import {
-  useMediaQuery
+  Box,
+  Container,
+  Typography,
+  useMediaQuery,
 } from '@mui/material';
 
 import { theme } from '@themes';
+import {
+  Hero,
+  DreamFlow,
+  ProjectsList,
+  ProjectCardProps,
+} from '@components';
 
-import { Hero, DreamFlow, ProjectsInProgress } from '@components';
+type HomeProps = {
+  projects: ProjectCardProps[];
+}
 
-export const Home = () => {
+export const Home: FC<HomeProps> = ({ projects }) => {
   const lessLg = useMediaQuery(theme.breakpoints.down('lg'));
   const moreMd = useMediaQuery(theme.breakpoints.up('md'));
 
@@ -14,7 +27,24 @@ export const Home = () => {
     <>
       <Hero lessLg={lessLg} moreMd={moreMd}/>
       <DreamFlow/>
-      <ProjectsInProgress/>
+      {projects && (
+        <Box
+          id="projects-in-progress"
+          bgcolor={'background.paper'}
+          component={'section'}
+        >
+          <Container>
+            <Box pt={'52px'} pb={'102px'}>
+              <Box mb={4} textAlign={'center'}>
+                <Typography component={'h2'} variant={'h2'}>
+                  Проекти, які чекають на втілення
+                </Typography>
+              </Box>
+              <ProjectsList projects={projects}/>
+            </Box>
+          </Container>
+        </Box>
+      )}
     </>
   );
 };

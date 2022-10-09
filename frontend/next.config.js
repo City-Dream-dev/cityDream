@@ -3,7 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['localhost', 'citydream.pp.ua']
+    domains: [
+      'localhost',
+      'citydream.pp.ua',
+      'trello.com',
+      'trello-members.s3.amazonaws.com'
+    ]
   }
 }
 

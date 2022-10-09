@@ -1,11 +1,18 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 
 import { Project } from '../../components/project';
+import { getProject, getProjects } from '@api';
+import { FC } from 'react';
+import { ProjectCardProps } from '@components';
+import { GetStaticProps } from 'next';
+import { projectsContext } from '@context';
 
-const ProjectPage = () => {
-  const { query } = useRouter();
-  const { id } = query;
+type ProjectPageProps = {
+  project: ProjectCardProps;
+  projects: ProjectCardProps[];
+}
+
+const ProjectPage: FC<ProjectPageProps> = ({ projects, project }) => {
 
   return (
     <>
@@ -14,9 +21,39 @@ const ProjectPage = () => {
         <meta name="description" content="Project name"/>
         <link rel="icon" href="/frontend/public/favicon.ico"/>
       </Head>
-      <Project/>
+      <projectsContext.Provider value={{ projects, project }}>
+        <Project/>
+      </projectsContext.Provider>
     </>
   );
+};
+
+export const getStaticPaths = async () => {
+  const projects = await getProjects();
+  const paths = projects?.map(({ id }) => ({
+    params: { id },
+  })) || [];
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const id = context.params?.id as string | undefined;
+
+  // TODO: replace when we have correct endpoint for getting project data
+  const projects = await getProjects();
+  const project = projects?.find(({ id: projectId }) => id === projectId);
+  // const project = id ? await getProject(id) : null;
+
+  return {
+    props: {
+      project,
+      projects,
+    },
+  };
 };
 
 export default ProjectPage;
