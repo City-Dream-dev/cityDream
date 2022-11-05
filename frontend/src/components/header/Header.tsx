@@ -7,7 +7,8 @@ import {
   Drawer,
   IconButton,
   Toolbar,
-  useMediaQuery
+  useMediaQuery,
+  Typography,
 } from '@mui/material';
 import { Menu } from '@mui/icons-material';
 
@@ -23,8 +24,12 @@ export const Header = () => {
   };
 
   return (
-    <Box height={54}>
+    // TODO: remove second int after first release
+    <Box height={54 + 28}>
       <AppBar elevation={0}>
+        <Box bgcolor={'primary.main'} textAlign={'center'} p={0.5}>
+          <Typography color={'text.light'} fontWeight={'bold'}>Under development</Typography>
+        </Box>
         <Container>
           <Toolbar disableGutters sx={{ position: 'relative' }}>
             {lessMd ? (
