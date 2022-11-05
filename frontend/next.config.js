@@ -10,7 +10,8 @@ const nextConfig = {
       'platform-lookaside.fbsbx.com',
       'trello-members.s3.amazonaws.com',
     ]
-  }
+  },
+  target: 'serverless'
 }
 
 module.exports = nextConfig
