@@ -1,2 +1,2 @@
 cityDreamNextApplication:
-  component: "@sls-next/serverless-component@3.7.0"
+  component: "./node_modules/@sls-next/serverless-component"
