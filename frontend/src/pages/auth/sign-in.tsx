@@ -20,7 +20,7 @@ const SignIn: NextPage<{ providers: Provider[] }> = ({ providers }) => {
   }, [session]);
 
   return (
-    <div>
+    <div style={{ minHeight: '70vh' }}>
       <Head>
         <title>Sing in | City dream</title>
         <meta name="description" content="Sing in | City dream"/>

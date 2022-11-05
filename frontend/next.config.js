@@ -7,7 +7,8 @@ const nextConfig = {
       'localhost',
       'citydream.pp.ua',
       'trello.com',
-      'trello-members.s3.amazonaws.com'
+      'platform-lookaside.fbsbx.com',
+      'trello-members.s3.amazonaws.com',
     ]
   }
 }
