@@ -1,7 +1,9 @@
 import { FC, ReactNode } from 'react';
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
 
 import { Box } from '@mui/system';
+
+import { Image } from '..';
 
 export type FlowStepProps = {
   src: StaticImageData;

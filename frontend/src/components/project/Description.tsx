@@ -1,8 +1,7 @@
-import Image from 'next/image';
-
 import { Avatar, Box, Stack, Typography } from '@mui/material';
 
 import { StepProgress } from '.';
+import { Image } from '..';
 
 import { useProjectsProvider } from '@context';
 

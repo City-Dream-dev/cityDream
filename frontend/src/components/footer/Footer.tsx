@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import {
   Box,
   Container,
@@ -8,6 +7,8 @@ import {
 } from '@mui/material';
 
 import { theme } from '@themes';
+
+import { Image } from '..';
 
 import iconFacebook from '@assets/icons/ic-facebook.svg';
 import logoFounders from '@assets/images/logo-founders.png';
@@ -47,11 +48,11 @@ export const Footer = () => {
               fontWeight={'lighter'}
               fontSize={isLessMd ? '14px' : '17px'}
             >
-              Цей сайт створено за підтримки Європейського Союзу у межах проєкту
-              “Інтерналізація Українського кластерного альянсу: покращення
-              прямого діалогу між європейськими та українськими професійними
-              спільнотами під час війни”. Вебсайт відображає позицію УКА і не
-              обов’язково відображає позицію Європейського Союзу.
+              Цей веб-сайт був створений за підтримки Європейського Союзу в
+              рамках Стипендіальної програми для лідерів громадянського
+              суспільства країн Східного партнерства.<br/>Веб-сайт відображає
+              позицію команди City Dream і не обов’язково відображає позицію
+              Європейського Союзу.
             </Typography>
           </Box>
         </Box>
@@ -73,5 +74,5 @@ export const Footer = () => {
         </Box>
       </Container>
     </Box>
-  );
+);
 };

@@ -1,12 +1,11 @@
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 import { Box } from '@mui/system';
 import { Avatar, Button, Typography } from '@mui/material';
 import { getProviders, signIn, signOut, useSession } from 'next-auth/react';
 
-import { ButtonShareDream } from '../home/ButtonShareDream';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { ButtonShareDream, Image } from '..';
 
 interface User {
   email: string;

@@ -10,7 +10,10 @@
 
 # next.js
 /.next/
+/.next-tf/
 /out/
+/.serverless
+/.serverless_nextjs
 
 # production
 /build

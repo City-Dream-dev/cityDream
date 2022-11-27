@@ -1,11 +1,10 @@
 import { FC } from 'react';
-import Image from 'next/image';
 
 import { Box } from '@mui/system';
 import { Container, Grid, Typography } from '@mui/material';
 
 import heroImage from '@assets/images/cd-hero-image.png';
-import { ButtonShareDream } from './ButtonShareDream';
+import { Image, ButtonShareDream } from '..';
 
 type HomeHeroProps = {
   moreMd: boolean;

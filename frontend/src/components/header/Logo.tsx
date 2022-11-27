@@ -1,7 +1,9 @@
 import { Box } from '@mui/system';
 import Link from 'next/link';
-import Image from 'next/image';
+
 import logo from '@assets/icons/logo.svg';
+
+import { Image } from '..';
 
 export const Logo = () => (
   <>
