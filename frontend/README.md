@@ -61,7 +61,7 @@ AWS_PROFILE=citydream tf-next alias set www.citydream.pp.ua https://< deployment
 
 #### Remove alias
 ```bash
-AWS_PROFILE=citydream tf-next alias set www.citydream.pp.ua https://< deployment-id >.citydream.pp.ua
+AWS_PROFILE=citydream tf-next alias rm www.citydream.pp.ua
 ```
 
 #### Deployment list
