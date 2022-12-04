@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import { Box } from '@mui/system';
 import { Avatar, Button, Typography } from '@mui/material';
-import { getProviders, signIn, signOut, useSession } from 'next-auth/react';
+import { signOut, useSession } from 'next-auth/react';
 
 import { ButtonShareDream, Image } from '..';
 
@@ -78,16 +78,17 @@ export const NavMenu = () => {
                   : user?.name.split((' ')).map(str => str[0].toUpperCase())}
               </Avatar>
             </Box>
-
         ): (
-          <Button
-            variant={'outlined'}
-            color={'inherit'}
-            onClick={() => signIn()}
-            sx={{ borderColor: 'rgba(255, 255, 255, 0.5)' }}
-          >
-            Login with Facebook
-          </Button>
+          <Link href={'/auth/sign-in'}>
+            <Button
+              component={'a'}
+              variant={'outlined'}
+              color={'inherit'}
+              sx={{ borderColor: 'rgba(255, 255, 255, 0.5)' }}
+            >
+              Login with Facebook
+            </Button>
+          </Link>
         )}
       </Box>
     </>
