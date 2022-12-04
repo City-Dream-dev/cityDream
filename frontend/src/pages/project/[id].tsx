@@ -19,7 +19,7 @@ const ProjectPage: FC<ProjectPageProps> = ({ projects, project }) => {
       <Head>
         <title>City dream | Project</title>
         <meta name="description" content="Project name"/>
-        <link rel="icon" href="/frontend/public/favicon.ico"/>
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
       <projectsContext.Provider value={{ projects, project }}>
         <Project/>
