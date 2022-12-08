@@ -30,8 +30,51 @@ FACEBOOK_SECRET=00000000000000000000000000000000
 npm run dev
 ```
 
-#### Build the frontend project
+### Deployment
+#### Set aws credentials to ~/.aws/credentials
+```
+[citydream]
+aws_access_key_id=[AWS_ACCESS_KEY_ID]
+aws_secret_access_key=[AWS_SECRET_ACCESS_KEY]
+```
 
+#### Install terraform for next
 ```bash
-npm run build
+npm i -g tf-next@canary
+```
+
+#### Build
+```bash
+tf-next build
+```
+#### Deploy
+```bash
+AWS_PROFILE=citydream tf-next deploy --endpoint https://o03nrlkp22.execute-api.eu-central-1.amazonaws.com
+```
+
+#### Set alias
+```bash
+AWS_PROFILE=citydream tf-next alias set www.citydream.pp.ua https://< deployment-id >.citydream.pp.ua
+```
+
+### Clean up
+
+#### Remove alias
+```bash
+AWS_PROFILE=citydream tf-next alias rm www.citydream.pp.ua
+```
+
+#### Deployment list
+```bash
+AWS_PROFILE=citydream tf-next deployment ls
+```
+
+#### Deployment id list
+```bash
+AWS_PROFILE=citydream tf-next alias ls < deployment-id >
+```
+
+#### Remove deployment id
+```bash
+AWS_PROFILE=citydream tf-next deployment rm < deployment-id >
 ```

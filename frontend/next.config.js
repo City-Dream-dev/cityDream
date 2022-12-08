@@ -2,6 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    loader: 'custom',
+    domains: [
+      'localhost',
+      'citydream.pp.ua',
+      'trello.com',
+      'platform-lookaside.fbsbx.com',
+      'trello-members.s3.amazonaws.com',
+    ]
+  }
 }
 
 module.exports = nextConfig
