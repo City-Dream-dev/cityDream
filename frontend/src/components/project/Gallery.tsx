@@ -1,8 +1,10 @@
 import { Box, Grid, Stack } from '@mui/material';
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
 import projectImageMock from '@mocks/images/project-image-mock.png';
 import { FC } from 'react';
 import { useProjectsProvider } from '@context';
+
+import { Image } from '../atom';
 
 type ImageContainerProps = {
   src?: StaticImageData

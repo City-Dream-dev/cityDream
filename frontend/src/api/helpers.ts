@@ -30,7 +30,7 @@ const normalizeTrelloData = (
   description: Description,
 })
 
-const CORE_API = 'https://www.citydream.pp.ua/api'
+const CORE_API = 'https://api.citydream.pp.ua/api'
 
 export const getProjects = async (): Promise<ProjectCardProps[] | null> => {
   const res: TrelloProjectCardProps[] = await fetch(`${CORE_API}/dreams.json`)

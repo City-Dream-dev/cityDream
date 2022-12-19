@@ -1,6 +1,8 @@
 import { FC, useState } from 'react';
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
 import Link from 'next/link';
+
+import { Image } from '../atom';
 
 import {
   Box,

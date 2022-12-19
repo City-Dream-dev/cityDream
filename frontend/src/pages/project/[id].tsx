@@ -17,7 +17,7 @@ const ProjectPage: FC<ProjectPageProps> = ({ projects, project }) => {
   return (
     <>
       <Head>
-        <title>City dream | Project</title>
+        <title>City dream | {project?.title || 'Project'}</title>
         <meta name="description" content="Project name"/>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
